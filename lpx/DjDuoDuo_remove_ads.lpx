@@ -11,7 +11,7 @@
 #!date=2026-10-02 13:57:49
 
 [Script]
-response if ${url} ~= /^https:\/\/api\.dianyinduoduo\.com\/v4\/config\.php\?/i then script("https://raw.githubusercontent.com/fkingikelee/fkikelee/main/Resource/kelee/JavaScript/DjDuoDuo/DjDuoDuo_remove_ads.js") with tag="去广告", requires_body=true
+response if ${url} ~= /^https:\/\/api\.dianyinduoduo\.com\/v4\/config\.php\?/i then script("https://raw.githubusercontent.com/kobelalala/adblock-scripts/main/Resource/kelee/JavaScript/DjDuoDuo/DjDuoDuo_remove_ads.js") with tag="去广告", requires_body=true
 
 [MitM]
 hostname=api.dianyinduoduo.com

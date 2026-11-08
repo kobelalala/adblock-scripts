@@ -21,7 +21,7 @@ request if ${url} ~= /^https:\/\/ocean\.shuqireader\.com\/api\/route\/ios\/readP
 request if ${url} ~= /^https:\/\/ocean\.shuqireader\.com\/api\/render\/load\/resource/i then reject(404)
 
 [Script]
-response if ${url} ~= /^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore$/i then script("https://raw.githubusercontent.com/fkingikelee/fkikelee/main/Resource/kelee/JavaScript/ShuQiCenterReader/ShuQiCenterReader_remove_ads.js") with tag="移除书城横幅和阅读广告", requires_body=true
+response if ${url} ~= /^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore$/i then script("https://raw.githubusercontent.com/kobelalala/adblock-scripts/main/Resource/kelee/JavaScript/ShuQiCenterReader/ShuQiCenterReader_remove_ads.js") with tag="移除书城横幅和阅读广告", requires_body=true
 
 [MitM]
 hostname=ocean.shuqireader.com, huichuan.sm.cn

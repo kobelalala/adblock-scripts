@@ -23,7 +23,7 @@
 request if ${url} ~= /^https:\/\/god\.gameyw\.netease\.com\/v\d\/ad/i then reject(404)
 
 [Script]
-response if ${url} ~= /^https:\/\/app-conf\.ds\.163\.com\/v1\/app\/base\/conf\/static\/start-config\?os=ios/i then script("https://raw.githubusercontent.com/fkingikelee/fkikelee/main/Resource/kelee/JavaScript/NetEaseGodlike/NetEaseGodlike_remove_ads.js") with tag="网易大神去广告", timeout=10, requires_body=true
+response if ${url} ~= /^https:\/\/app-conf\.ds\.163\.com\/v1\/app\/base\/conf\/static\/start-config\?os=ios/i then script("https://raw.githubusercontent.com/kobelalala/adblock-scripts/main/Resource/kelee/JavaScript/NetEaseGodlike/NetEaseGodlike_remove_ads.js") with tag="网易大神去广告", timeout=10, requires_body=true
 
 [MitM]
 hostname=god.gameyw.netease.com, app-conf.ds.163.com
